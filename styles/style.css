@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./resources/Norse-Bold.otf) format("opentype");
+  }
+
+
+:root {
+    --btn-color: #596D48;
+    --invalid-input: #E5E7EB;
+    --valid-input: blue;
+    --box-shadow-color: 0 0 5px grey;
+}
+
+* {
+    border: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+}
+
+#sidebar {
+    background-image: url(/images/halie-west-25xggax4bSA-unsplash.jpg);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    justify-content: space-between;
+    width: 27vw;
+}
+
+.logo {
+    font-family: "Norse Bold", sans-serif, serif;
+    background-color: hsl(126, 100%, 0%, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 15rem;
+    top: 12rem;
+}
+
+.logo img {
+    transform: scale(0.2);
+    height: 380px;
+    width: auto;
+}
+
+.logo > * {
+    flex-basis: 100%;
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    width: 73vw;
+}
+
+.infoContent, .submit {
+    background-color: hsla(0, 1%, 47%, 0.1);
+    padding: 3rem 0;
+    width: 73vw;
+    flex-grow: 1;
+    padding: 2rem 30px;
+}
+
+
+
+.main {
+    box-shadow: var(--box-shadow-color);
+    background-color: white;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 30px;
+    width: 73vw;
+
+}
+
+
+
+.quoteOne {
+    padding-top: 5rem;
+    max-width: 75ch;
+}
+
+.quoteThree {
+    padding-bottom: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+
+.form {
+    display: flex;
+}
+
+.form > div {
+    padding: 10px;
+}
+
+label {
+    padding: 10px 5px 2px 0px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(86, 85, 85);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.formColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+}
+
+
+
+input {
+    border: 2px solid rgb(159, 154, 154);
+    border-radius: 2px;
+    padding: 5px 8px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input:focus {
+    box-shadow: var(--box-shadow-color);
+    border: 2px solid #4c4cf4;
+}
+
+
+#password:invalid, #confirmPassword:invalid {
+    border: 2px solid red;
+    outline: none;
+}
+
+
+.accountCreation {
+    padding: 7px 20px;
+    background-color: var(--btn-color);
+    color: white;
+    border-radius: 4px;
+}
+
+.accountCreation:hover {
+    cursor: pointer;
+}
+
+.submit > div {
+    font-size: small;
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+.submit a {
+    text-decoration: none;
+    color: var(--btn-color);
+}
+
+
+.formInput:focus {
+    outline: 2px solid blue;
+    border: none;
+}
